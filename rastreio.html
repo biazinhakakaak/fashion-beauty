@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreio de Pedido - Loja de Cosméticos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <header>
+        <h1>Rastreio de Pedido</h1>
+    </header>
+    
+    <main>
+        <section class="tracking-section">
+            <h2>Verifique o status do seu pedido</h2>
+            <form id="tracking-form" action="rastrear_pedido.php" method="POST">
+                <label for="tracking-code">Código de Rastreio:</label>
+                <input type="text" id="tracking-code" name="tracking_code" placeholder="Digite seu código" required>
+                
+                <button type="submit">Rastrear</button>
+            </form>
+
+            <div id="tracking-result" class="tracking-result" style="display: none;">
+                <h3>Status do Pedido</h3>
+                <p id="status-message">Seu pedido está em trânsito.</p>
+                <!-- Aqui você pode adicionar mais informações sobre o rastreio -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Cosméticos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Exemplo de simulação de rastreio
+        document.getElementById('tracking-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            // Simula uma consulta de rastreio
+            const trackingCode = document.getElementById('tracking-code').value;
+            const trackingResult = document.getElementById('tracking-result');
+            const statusMessage = document.getElementById('status-message');
+
+            // Aqui você pode implementar a lógica para buscar o status real do pedido
+            if (trackingCode) {
+                // Simulando uma resposta
+                statusMessage.textContent = `Seu pedido com o código ${trackingCode} está em trânsito.`;
+                trackingResult.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

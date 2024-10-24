@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrossel Automático</title>
+<style>
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="carousel-container">
+  <div class="carousel">
+    <img src="skincare.jpg" alt="Imagem 1">
+    <img src="fashion.png" alt="Imagem 2">
+    <img src="skincare.jpg" alt="Imagem 3">
+    <img src="fashion.png" alt="Imagem 4">
+  </div>
+</div>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.carousel img');
+  const slideCount = slides.length;
+
+  function showSlides() {
+    if (slideIndex >= slideCount) {
+      slideIndex = 0;
+    }
+    else if (slideIndex < 0) {
+      slideIndex = slideCount - 1;
+    }
+    const offset = -slideIndex * 100;
+    document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+    slideIndex++;
+  }
+
+  setInterval(showSlides, 2000); // Muda a cada 2 segundos (2000 milissegundos)
+</script>
+
+</body>
+</html>
