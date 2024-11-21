@@ -10,6 +10,7 @@
 	</head>
 
 	<body>
+	
 		<header>
 			<div>
 				<img src="Logotipo Borcelle Store Minimalista Delicada Rosa.png" alt="minha imagem" width="110">
@@ -17,45 +18,147 @@
 				<div class="div-menu">
 				<nav>
 					<ul>
-						<li><a href="index.html"></a></li>
-						<li><a href="produtos.html"style="color:black;">o que você procura hoje?</a></li>
-						<li><a href="contato.html" style="color:black;"><img src="sacola.png" width="50">sacola</a></li>
+						<li><a href="index.html"></a></li>	
+						<li><a href="sacola.html" style="color:black;"><img src="sacola.png" width="50">sacola</a></li>
 						<li><a href="favoritos.html"style="color:black;"><img src="favoritos.png" width="50">favoritos</a></li>
-						<li><a href="favoritos.html" style="color:black;"><img width="50">Cadastre-se</a></li>
+						<li><a href="cadastro.html" style="color:black;"><img width="50">Cadastre-se</a></li>
 						<li><a href="sobrenos.html"style="color:black;"><img  width="50">sobre nós</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-
+		<!DOCTYPE html>
+		<html lang="pt-BR">
+		<head>
+		  <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <title>Carrossel de Tela Cheia</title>
+		  <style>
+			* {
+			  box-sizing: border-box;
+			  margin: 0;
+			  padding: 0;
+			}
+		
+			/* Container de Tela Cheia */
+			.carousel-container {
+			  width: 100vw;
+			  height: 100vh;
+			  overflow: hidden;
+			  position: relative;
+			}
+		
+			/* Faixa que segura os slides */
+			.carousel-track {
+			  display: flex;
+			  transition: transform 0.5s ease;
+			  height: 100%;
+			}
+		
+			/* Cada slide ocupa a tela inteira */
+			.carousel-slide {
+			  min-width: 100vw;
+			  height: 90vh;
+			  background-size: cover;
+			  background-position: center;
+			}
+		
+			/* Imagens de fundo para cada slide */
+			.carousel-slide:nth-child(1) { background-image: url('perfumeindex.jpg'); }
+			.carousel-slide:nth-child(2) { background-image: url('homemmodelo.jpg'); }
+			.carousel-slide:nth-child(3) { background-image: url('mulhermo.jpeg'); }
+		
+			/* Botões de Navegação */
+			.carousel-button {
+			  position: absolute;
+			  top: 50%;
+			  transform: translateY(-50%);
+			  background-color: rgba(179, 14, 94, 0.5);
+			  color: #fff;
+			  border: none;
+			  font-size: 2rem;
+			  padding: 10px;
+			  cursor: pointer;
+			}
+		
+			.carousel-button.left {
+			  left: 10px;
+			}
+		
+			.carousel-button.right {
+			  right: 10px;
+			}
+		  </style>
+		</head>
+		<body>
+		
+		<div class="carousel-container">
+		  <div class="carousel-track">
+			<div class="carousel-slide"></div>
+			<div class="carousel-slide"></div>
+			<div class="carousel-slide"></div>
+		  </div>
+		  <button class="carousel-button left" onclick="moveToPreviousSlide()">&#10094;</button>
+		  <button class="carousel-button right" onclick="moveToNextSlide()">&#10095;</button>
+		</div>
+		
+		<script>
+		  // JavaScript para o carrossel automático e botões
+		  const track = document.querySelector('.carousel-track');
+		  const slides = Array.from(track.children);
+		  let currentIndex = 0;
+		  let slideInterval;
+		
+		  function updateSlidePosition() {
+			const newPosition = -currentIndex * 100;
+			track.style.transform = `translateX(${newPosition}vw)`;
+		  }
+		
+		  function moveToNextSlide() {
+			currentIndex = (currentIndex + 1) % slides.length;
+			updateSlidePosition();
+		  }
+		
+		  function moveToPreviousSlide() {
+			currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+			updateSlidePosition();
+		  }
+		
+		  function startAutoSlide() {
+			slideInterval = setInterval(moveToNextSlide, 3000);
+		  }
+		
+		  function stopAutoSlide() {
+			clearInterval(slideInterval);
+		  }
+		
+		  // Inicia o carrossel automaticamente
+		  startAutoSlide();
+		
+		  // Para o carrossel quando o botão é clicado e reinicia depois
+		  document.querySelector('.carousel-button.left').addEventListener('click', () => {
+			stopAutoSlide();
+			moveToPreviousSlide();
+			startAutoSlide();
+		  });
+		
+		  document.querySelector('.carousel-button.right').addEventListener('click', () => {
+			stopAutoSlide();
+			moveToNextSlide();
+			startAutoSlide();
+		  });
+		</script>
+		
+		</body>
+		</html>
+		
 		<div class="divCarrossel">
-			<img class="carrossel" src="AUTO CUIDADO.jpg" width="200">
-			<img class="carrossel" src="Maquiagem (2).jpg" width="200">
-			<img class="carrossel" src="PERFUMES.png" width="200">
-			<img class="carrossel" src="PERFUMES MASCULINOS.png" width="110">
+			<a href="paginaProduto.html"><img class="carrossel" src="AUTO CUIDADO.jpg" width="200"></a>
+			<a href="maquiagem.html"><img class="carrossel" src="Maquiagem (2).jpg" width="200"></a>
+			<a href="perfumefem.html"><img class="carrossel" src="PERFUMES.png" width="200"></a>
+			<a href="produtohomem.html"><img class="carrossel" src="PERFUMES MASCULINOS.png" width="110"></a>
 			
 		</div>
-
-		<main>
-			<section class="products">
-				<article class="product">
-					<h2></h2>
-					<p>Slogan do Produto 1</p>
-				</article>
-				<article class="">
-					<h2>Produto 2</h2>
-					<p>Slogan do Produto 2</p>
-				</article>
-				<article class="product">
-					<h2>Produto 3</h2>
-					<p>Slogan do Produto 3</p>
-				</article>
-				<article class="product">
-					<h2>Produto 4</h2>
-					<p>Slogan do Produto 4</p>
-				</article>
-			</section>
-		</main>
 		
 
 

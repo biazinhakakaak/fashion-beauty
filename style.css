@@ -273,3 +273,594 @@ background-color: #c59fc0;
     margin: 5px 0;
     color: #666;
 }
+/* Centraliza a página */
+.cadastro {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Configuração da estrutura */
+.cadstro {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #ff4da6;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Campos de entrada */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+    background-color: #ff4da6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff66b2;
+}
+
+/* Estilo do link de redirecionamento */
+p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+p a {
+    color: #ff4da6;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a página Sobre Nós */
+.sobre-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Logo e título */
+.logo-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.sobre-container h1 {
+    color: #ff4da6;
+    font-size: 28px;
+}
+
+.sobre-container p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Configuração dos tópicos */
+.topico {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.topico h2 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.topico p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+/* Estilo para a página Sobre Nós */
+.sobre-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Logo no topo */
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sobre-container h1 {
+    color: #ff4da6;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do parágrafo inicial */
+.sobre-container p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Configuração dos tópicos */
+.topico {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.topico h2 {
+    color: #ff66b2;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.topico p {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-container {
+        padding: 15px;
+    }
+
+    .topico p {
+        padding: 0;
+    }
+}
+/* Estilo para a página de Favoritos */
+.favoritos-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.favoritos-container h1 {
+    color: #ff4da6;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.favoritos-container p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos produtos favoritos */
+.produto-favorito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.imagem-produto {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.info-produto h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.info-produto p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+button {
+    background-color: #ff4da6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff66b2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto-favorito {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagem-produto {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+/* Estilo para a página da Sacola */
+.sacola-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sacola-container h1 {
+    color: #ff4da6;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sacola-container p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos produtos na sacola */
+.produto-sacola {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.imagem-produto {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.info-produto h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.info-produto p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+/* Controles de quantidade */
+.quantidade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input.input-quantidade {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+button {
+    background-color: #ff4da6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff66b2;
+}
+
+/* Total e botão de finalizar compra */
+.total {
+    margin-top: 20px;
+}
+
+.total h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+.finalizar-compra {
+    background-color: #4CAF50; /* Verde para finalizar */
+}
+
+.finalizar-compra:hover {
+    background-color: #45a049; /* Verde escuro ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto-sacola {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagem-produto {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+/* Estilo para o carrinho de compras */
+.carrinho-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.carrinho-container h1 {
+    color: #ff4da6;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.carrinho-container p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos produtos no carrinho */
+.produto-carrinho {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.imagem-produto {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.info-produto h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.info-produto p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+/* Controles de quantidade */
+.quantidade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input.input-quantidade {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #ff4da6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff66b2;
+}
+
+/* Total e botão de finalizar compra */
+.total {
+    margin-top: 20px;
+}
+
+.total h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+.finalizar-compra {
+    background-color: #4CAF50; /* Verde para finalizar */
+}
+
+.finalizar-compra:hover {
+    background-color: #45a049; /* Verde escuro ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto-carrinho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagem-produto {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilo para a página de cadastro */
+.cadastro-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cadastro-container h1 {
+    color: #ff4da6;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff4da6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff66b2;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #ff4da6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header{
+    background-color: #ff66b2);
+    height: 100px;
+    text-align: center;
+justify-items: center;
+}

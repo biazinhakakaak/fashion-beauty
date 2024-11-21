@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Beleza Feminina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="carrinho-container">
+        <h1>Carrinho de Compras</h1>
+        <p>Confira os produtos que você adicionou ao seu carrinho.</p>
+
+        <div class="produto-carrinho">
+            <img src="produto1.jpg" alt="Produto 1" class="imagem-produto">
+            <div class="info-produto">
+                <h2>Produto 1</h2>
+                <p>Descrição breve do produto.</p>
+                <div class="quantidade">
+                    <button class="alterar-quantidade" onclick="alterarQuantidade(this, -1)">-</button>
+                    <input type="number" value="1" min="1" class="input-quantidade" readonly>
+                    <button class="alterar-quantidade" onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+                <p class="preco">R$ 29,90</p>
+                <button class="remover-produto" onclick="removerProduto(this)">Remover</button>
+            </div>
+        </div>
+
+        <div class="produto-carrinho">
+            <img src="produto2.jpg" alt="Produto 2" class="imagem-produto">
+            <div class="info-produto">
+                <h2>Produto 2</h2>
+                <p>Descrição breve do produto.</p>
+                <div class="quantidade">
+                    <button class="alterar-quantidade" onclick="alterarQuantidade(this, -1)">-</button>
+                    <input type="number" value="1" min="1" class="input-quantidade" readonly>
+                    <button class="alterar-quantidade" onclick="alterarQuantidade(this, 1)">+</button>
+                </div>
+                <p class="preco">R$ 49,90</p>
+                <button class="remover-produto" onclick="removerProduto(this)">Remover</button>
+            </div>
+        </div>
+
+        <div class="total">
+            <h2>Total: <span id="total-preco">R$ 79,80</span></h2>
+            <a href="pagamento.html" button class="finalizar-compra"><button> Finalizar Compra</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
